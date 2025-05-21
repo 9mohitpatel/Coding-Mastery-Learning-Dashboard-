@@ -112,5 +112,61 @@ CREATE TABLE contact_messages (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+✨ Features
+🔐 User Management
+User Registration & Login
+Register new users with name, email, password, and role.
+
+Role-based Access Control
+Two roles supported: user and admin.
+
+📚 Course Enrollment
+Dynamic Enrollment Form
+Users can enroll by submitting their name, email, mobile number, course name, and payment amount.
+
+Data Stored in MySQL
+Enrollments are stored in the enrollment table with auto-incremented IDs.
+
+📬 Contact Form System
+Contact Us Page
+Users can send inquiries through a contact form.
+
+Backend Storage
+All messages are saved to the contact_messages table with a timestamp.
+
+💾 MySQL Database Integration
+All dynamic data is stored and retrieved from a MySQL database using JDBC.
+
+Database tables include: users, enrollment, contact_messages.
+
+🖥️ Admin Access (Planned or Implemented)
+Admin Login
+Special access to view or manage enrollments and contact submissions.
+
+Future Dashboard Support
+Easily extendable for admin dashboards and analytics.
+
+🔗 Session Management
+Tracks user sessions after login for personalized access.
+
+Used to restrict page access without re-login.
+
+📄 Servlet + JSP Architecture
+MVC Pattern
+Clean separation of logic (Servlet), presentation (JSP), and data access (DAO).
+
+Reusable Components
+Easily extendable design for additional features like quizzes or course listings.
+
+⚙️ Modular Codebase
+DAO Layer handles all DB logic.
+
+Servlet Layer handles HTTP requests and form submissions.
+
+JSPs used for rendering user-friendly pages.
+
+🎯 Fully Functional Educational Workflow
+From user registration to course enrollment and messaging, the complete flow mimics real educational platforms.
+
 
 
